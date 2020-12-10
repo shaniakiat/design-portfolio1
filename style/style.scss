@@ -21,7 +21,7 @@ img {
 }
 
 .nav-container {
-  background-color: #1f1235;
+  background-color: #67568c;
 
   a {
     color: white;
@@ -93,7 +93,6 @@ section {
   position: absolute;
   width: 100px;
   height: 100%;
-  //   border-radius: 50%;
   background-color: #fbdd74;
   top: 0;
   left: 0;
@@ -238,7 +237,7 @@ section {
     background: unset;
 
     header {
-      background: #1f1235;
+      background: #67568c;
     }
   }
   header {
@@ -308,17 +307,3 @@ section {
     padding: 6em 20em 4em 20em;
   }
 }
-
-// .arrow {
-//   animation: arrowAnim 1s infinite alternate-reverse;
-// }
-
-// @keyframes arrowAnim {
-//   from {
-//     transform: translate(262px, 798px);
-//     z-index: 5;
-//   }
-//   to {
-//     transfrom: translate(262px, 830px);
-//   }
-// }

@@ -20,7 +20,7 @@ img {
 }
 
 .nav-container {
-  background-color: #1f1235;
+  background-color: #67568c;
 }
 
 .nav-container a {
@@ -250,7 +250,7 @@ section {
     background: unset;
   }
   .nav-container header {
-    background: #1f1235;
+    background: #67568c;
   }
   header {
     padding: 2em 2em 2em 6em;

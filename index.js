@@ -53,3 +53,10 @@ gsap.from(".transition3", {
   duration: 1.2,
   stagger: 0.6,
 });
+
+gsap.from(".letter-anim", {
+  stagger: 0.2,
+  scale: 0.1,
+  duration: 2,
+  ease: Back.easeOut.config(1.5),
+});
