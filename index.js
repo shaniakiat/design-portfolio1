@@ -60,3 +60,23 @@ gsap.from(".letter-anim", {
   duration: 2,
   ease: Back.easeOut.config(1.5),
 });
+
+function openExperience(evt, expTitle) {
+  var i, experienceContent, experienceLinks;
+  experienceContent = document.getElementsByClassName("exp-content");
+  for (i = 0; i < experienceContent.length; i++) {
+    experienceContent[i].style.display = "none";
+  }
+  experienceLinks = document.getElementsByClassName("experienceLinks");
+  for (i = 0; i < experienceLinks.length; i++) {
+    experienceLinks[i].className = experienceLinks[i].className.replace(
+      " active",
+      ""
+    );
+  }
+  document.getElementById("experience" + expTitle).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();

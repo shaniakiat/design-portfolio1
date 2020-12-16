@@ -17,7 +17,6 @@
         <nav>
           <ul>
             <li><a href="">About</a></li>
-            <li><a href="">Experience</a></li>
             <li><a href="">Contact</a></li>
           </ul>
         </nav>
@@ -26,10 +25,13 @@
       <div class="social-header">
         <ul>
           <li>
-            <a href="https://www.linkedin.com/in/shania-kiat" target="_blank" rel="noopener"><img src="images/linkedin.svg" alt="" /></a>
+            <a href="https://www.linkedin.com/in/shania-kiat" target="_blank" rel="noopener"><img
+                src="images/linkedin.svg" alt="" /></a>
           </li>
-          <li><a href="https://github.com/shaniakiat" target="_blank" rel="noopener"></a><img src="images/github.svg" alt="" /></li>
-          <li><a href="https://dribbble.com/shaniakiat" target="_blank" rel="noopener"></a><img src="images/dribbble.svg" alt="" /></li>
+          <li><a href="https://github.com/shaniakiat" target="_blank" rel="noopener"><img src="images/github.svg"
+                alt="" /></a></li>
+          <li><a href="https://dribbble.com/shaniakiat" target="_blank" rel="noopener"><img src="images/dribbble.svg"
+                alt="" /></a></li>
         </ul>
       </div>
     </div>
@@ -102,6 +104,97 @@
       </svg>
     </div>
 
+    <section class="experience-section">
+      <p class="subtitle">Where I’ve Worked</p>
+
+      <div class="experience">
+        <button class="experienceLinks" onclick="openExperience(event, 'Vanguard')" id="defaultOpen">
+          Vanguard
+        </button>
+        <button class="experienceLinks" onclick="openExperience(event, 'Tegra')">
+          Tegra
+        </button>
+        <button class="experienceLinks" onclick="openExperience(event, 'Permias')">
+          Permias
+        </button>
+      </div>
+
+      <div id="experienceVanguard" class="exp-content">
+        <p class="position">Application Development Intern</p>
+        <p class="date">May 2020 – Jul 2020</p>
+        <p class="location">Malvern, Pennsylvania, United States</p>
+        <ul>
+          <li>
+            Developed a web application for the financial advisors to test the
+            client-tailored portfolio rebalance engine using Angular 8, Vanguard
+            UI Library, and Vanguard API.
+          </li>
+          <li>
+            Worked closely with the product owner and the methodology team to
+            refine business requirements and maintain overall project status.
+          </li>
+          <li>
+            Ensured quality assurance by creating unit and end-to-end tests
+            utilizing Jasmine.
+          </li>
+          <li>
+            Collaborated with a team of interns to develop a full-stack
+            application of Vanguard internal e-commerce using MongoDB,
+            Express.js, Angular 8, Node.js.
+          </li>
+          <li>Utilized development tools such as Bitbucket and Jira.</li>
+          <li>
+            Participated in daily scrum, code reviews, and agile methodologies.
+          </li>
+        </ul>
+      </div>
+
+      <div id="experienceTegra" class="exp-content">
+        <p class="position">Data Science Intern</p>
+        <p class="date">May 2019 – Aug 2019</p>
+        <p class="location">Doylestown, Pennsylvania, United States</p>
+        <ul>
+          <li>
+            Performed exploratory data analysis for 10,000+ doctors and
+            Parkinson’s disease products to prepare for predictive modeling.
+          </li>
+          <li>
+            Implemented machine learning algorithms such as Time Series and
+            K-Means clustering in Python to target new customer groups for a new
+            Parkinson’s disease product.
+          </li>
+        </ul>
+      </div>
+
+      <div id="experiencePermias" class="exp-content">
+        <p class="position">Creative Director</p>
+        <p class="date">Jan 2018 – Feb 2019</p>
+        <p class="location">Greater Philadelphia Area</p>
+        PERMIAS is short for Persatuan Mahasiswa Indonesia di Amerika Serikat,
+        or the Indonesian Students' Association in America.
+        <ul>
+          <li>
+            Designed an Indo Philly Cuisines Booklet as a collaboration with the
+            City of Philadelphia's Department of Commerce.
+          </li>
+          <li>
+            Consulted with the President for the design promotional materials.
+          </li>
+          <li>
+            Assisted the designing aspect for the content of social media.
+          </li>
+          <li>
+            Worked with Social Media Director to create marketing material and
+            enhance our brand image.
+          </li>
+          <li>
+            Designed the Indonesian Student Association newsletter (BAPER,
+            Bacaan PERMIAS).
+          </li>
+        </ul>
+      </div>
+    </section>
+    
     <section class="featured">
       <div class="left">
         <div class="inner transition2">
@@ -115,6 +208,7 @@
       </div>
       <img src="images/project-1.png" alt="Featured Project " class="right transition2" />
     </section>
+
     <section class="skills">
       <div class="skills-container">
         <ul>

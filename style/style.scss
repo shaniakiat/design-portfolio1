@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
 
 body {
   height: 100vh;
   margin: 0;
-  font-family: "Poppins", sans-serif;
 }
 
 ul {
@@ -84,6 +86,81 @@ section {
   padding: 4em 2em;
   text-align: center;
 }
+
+.experience-section {
+  position: relative;
+  text-align: left;
+}
+
+.experience-section::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #ff6e6c;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.experience {
+  overflow: hidden;
+}
+
+.experience button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: #1f1235;
+  border-bottom: 3px solid #fbdd74;
+}
+
+.experience button:hover {
+  background-color: #67568c;
+}
+
+.experience button.active {
+  background-color: #67568c;
+  border-bottom: 3px solid #1f1235;
+  color: white;
+}
+
+.exp-content {
+  display: none;
+  padding: 6px 12px;
+  color: #1f1235;
+  border-top: none;
+  text-align: left;
+
+  p {
+    margin: 0;
+  }
+  .position {
+    font-weight: bold;
+  }
+
+  .date,
+  .location {
+    font-size: 14px;
+  }
+
+  ul {
+    margin-top: 10px;
+    list-style-type: initial;
+    padding-left: 18px;
+
+    li {
+      font-size: 14px;
+    }
+  }
+}
+
 .featured {
   position: relative;
 }
@@ -91,10 +168,10 @@ section {
 .featured::before {
   content: "";
   position: absolute;
-  width: 100px;
-  height: 100%;
+  width: 200px;
+  height: 200px;
   background-color: #fbdd74;
-  top: 0;
+  bottom: 0;
   left: 0;
   z-index: -1;
 }
@@ -165,6 +242,48 @@ section {
 }
 
 @media only screen and (min-width: 800px) {
+  .experience-section {
+    box-sizing: border-box;
+  }
+
+  .experience-section::before {
+    width: 250px;
+    height: 250px;
+  }
+
+  .experience {
+    float: left;
+    width: 25%;
+  }
+
+  .experience button {
+    display: block;
+    background-color: inherit;
+    color: #1f1235;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    border-left: 3px solid #fbdd74;
+  }
+
+  .experience button:hover {
+    background-color: #67568c;
+  }
+
+  .experience button.active {
+    border: none;
+    border-left: 3px solid #1f1235;
+  }
+  .exp-content {
+    float: left;
+    padding: 0px 12px;
+    width: 70%;
+    border-left: none;
+    height: 300px;
+  }
+
   .featured,
   .portfolio {
     text-align: left;
@@ -174,6 +293,11 @@ section {
   .portfolio-container {
     display: grid;
     grid-template-columns: 40% auto;
+  }
+
+  .featured::before {
+    width: 200px;
+    height: 360px;
   }
 
   .left,
